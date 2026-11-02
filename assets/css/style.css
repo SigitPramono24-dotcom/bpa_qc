@@ -1,0 +1,113 @@
+/* assets/css/style.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background-color: #0b1a4a; /* Warna Navy sesuai desain */
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .logo-area {
+    display: flex;
+    align-items: center;
+    padding: 0 20px 20px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar .logo-area img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.sidebar .logo-area h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.sidebar .logo-area span {
+    font-size: 11px;
+    color: #a0aec0;
+}
+
+.sidebar .menu-label {
+    font-size: 11px;
+    color: #718096;
+    padding: 20px 20px 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sidebar .nav-link {
+    color: #cbd5e0;
+    padding: 12px 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.sidebar .nav-link i {
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+.sidebar .nav-link:hover, .sidebar .nav-link.active {
+    background-color: #1a56db; /* Warna biru aktif */
+    color: #fff;
+    border-left: 4px solid #fff;
+}
+
+/* Main Content Styling */
+.main-content {
+    margin-left: 260px;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Topbar Styling */
+.topbar {
+    background: #fff;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* Card Styling */
+.stat-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+.stat-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
